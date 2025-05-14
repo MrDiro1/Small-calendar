@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>small calendar</title>
+		<link rel="stylesheet" href="styles/footer.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
+	</head>
+	<body>
+		<main class="main">
+			<section class="calendar-page">
+				<div class="calendar-page__container">
+					<div class="calendar-page__wrapper">
+						<div class="calendar-page__controls">
+							<label class="visually-hidden" for="daysInput"
+								>Enter number of days</label
+							>
+							<input
+								class="calendar-page__input"
+								type="number"
+								id="daysInput"
+								placeholder="Enter the number of days"
+							/>
+							<button class="calendar-page__select-button" onclick="setDays()">
+								Select
+							</button>
+						</div>
+						<div class="calendar-page__content">
+							<div class="calendar-page__header-decor"></div>
+							<h1 class="calendar-page__title" id="dayCount">0</h1>
+							<button class="calendar-page__tear-button" onclick="tearDay()">
+								Tear Day
+							</button>
+						</div>
+					</div>
+					<div class="footer__timer" id="countdown-timer"></div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+
+		<script src="scripts/script.js"></script>
+		<script src="scripts/timer.js"></script>
+	</body>
+</html>
